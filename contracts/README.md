@@ -11,3 +11,8 @@ npx hardhat run scripts/deploy.js --network <network>
 ```
 
 Deployment uses the script in `scripts/deploy.js`.
+
+### Offline Testing
+
+Hardhat downloads the Solidity compiler on first run. To avoid this, supply a
+local binary via the `SOLC_BINARY` environment variable before running tests.
