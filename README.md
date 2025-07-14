@@ -26,7 +26,7 @@ cd api && npm start
 cd frontend && npm run dev
 ```
 
-Alternatively, build and run everything using Docker Compose from the repository root:
+Alternatively, build and run everything using Docker Compose from the repository root. The `docker-compose.yml` file orchestrates the Node API and Next.js frontend:
 
 ```bash
 docker-compose up --build
