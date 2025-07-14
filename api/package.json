@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "api",
   "version": "1.0.0",
   "description": "",
@@ -16,5 +17,25 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
+=======
+  "name": "tg-api",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "mongodb-memory-server": "^8.14.0"
+>>>>>>> origin/codex/2025-07-13
   }
 }

@@ -1,0 +1,28 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:6
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo-data:/data/db
+  api:
+    build: ./api
+    environment:
+      - PORT=3001
+      - MONGODB_URI=mongodb://mongo:27017/tokenized_gold
+      - JWT_SECRET=changeme
+    ports:
+      - '3001:3001'
+    depends_on:
+      - mongo
+  frontend:
+    build: ./frontend
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:3001
+    ports:
+      - '3000:3000'
+    depends_on:
+      - api
+volumes:
+  mongo-data:
