@@ -26,6 +26,14 @@ cd api && npm start
 cd frontend && npm run dev
 ```
 
+## Testing
+
+Run backend tests from the `api` directory:
+
+```bash
+cd api && npm test
+```
+
 Alternatively, build and run everything using Docker Compose from the repository root:
 
 ```bash
